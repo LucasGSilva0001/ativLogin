@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/cadastro.css">
+    <title>Pobreflix</title>
+</head>
+<body>
+    <div class="cadastro-container">
+        <p>CADASTRO</p>
+        <form id="cadastro-form">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16" data-required>
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" data-required>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-required data-email-validate>
+            </div>
+            <div>
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da sua cidade" data-required >
+            </div>
+            <div>
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço" data-required >
+            </div>
+            <div>
+                <label for="num-endereco">Nº da residência</label>
+                <input type="text" name="num-endereco" id="num-endereco" placeholder="Digite o múmero da sua residência" data-required>
+            </div>
+            <div>
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado" placeholder="Digite o nome do seu estado" data-required>
+            </div>
+            <div>
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+            </div>
+            <div>
+                <label for="confirm-password">Confirmação de senha</label>
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Digite novamente sua senha" data-equal="password">
+            </div>
+            <div class="termos-div">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#" class="termos">termos de uso</a></label>
+            </div>
+            <input type="submit" id="btn-cadastro" placeholder="Cadastrar">
+        </form>
+    </div>
+    <p class="error-valid template"></p>
+    <script src="../JavaScript/cadastro.js"></script>
+</body>
+</html>
